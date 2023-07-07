@@ -29,3 +29,4 @@ API Documentation: https://acnhapi.com/doc
 ### Wireframe
 ![img1](images/General%20Assembly-2.jpg)
 ![img2](images/General%20Assembly-3.jpg)
+
