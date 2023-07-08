@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AC Birthday Twins</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -11,6 +12,7 @@
 <body>
     <h1>Who is your Birthday Twin?</h1>
    <div class="forms">
+    <div class="select">
     <select name="month" id="monthSelect">
         <option value="">Birth Month</option>
         <option value="jan">January</option>
@@ -62,10 +64,13 @@
         <option value="31">31</option>
     </select>
     </div>
-
-    
     <input id="button" type="button" value="Loading birthday twin, happy crossing!">
-    
+</div>
+
+<form id="hiddenForm" action="result.html" value="Loading birthday twin, happy crossing!" onclick="redirectToResultPage()">
+    <input type="hidden" name="month" id="hiddenMonth">
+    <input type="hidden" name="day" id="hiddenDay">
+</form>
 
 </body>
 </html>

@@ -1,8 +1,43 @@
-body {
+h1 {
+   text-align: center;
+   margin: 0;
+   padding: 300px 0 0;
+   color:	#81f1f7;
+}
+
+.forms {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    padding: 30px;
+    flex-direction: column;
+    color: 
 }
 
+.select {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    max-width: 300px;
+}
+
+#button {
+   margin: 40px;
+}
+
+body {
+    background-color: ;
+    
+}
+
+/* 
+#9dffb0
+#81f1f7
+#c48d3f
+#fff563
+*/
+
+/* 
+background img to be ac leaves
+opacity at 20% 
+*/
