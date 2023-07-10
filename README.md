@@ -56,13 +56,13 @@ API Documentation: https://acnhapi.com/doc
 ### Notes
 I was stuck on formatting my html for a very long time, I spent about 3 hours just staring at my screen trying to center it, but
 I went to office hours and Billie was able to help me. After that, I tweaked a few more things to my liking. I realized I should
-probably get working on my logic so I did that. 
+probably get working on my logic so I did that. <br>
 First big problem I ran into was linking another page after I hit the submit button, so that I could display the result on it. I also
-asked Billie for help with this, but through some research and googling, I decided that `window.location.href` was the way to go.
+asked Billie for help with this, but through some research and googling, I decided that `window.location.href` was the way to go. <br>
 The next problem I had was bringing over the form value from my index.html/app.js to my result.html/result.js.
 I had tried to use the query method, but it was not working for me so I used localStorage to store my value and reference it.
 (This is after many hours of googling. I used another .js file as my scratch paper and copy and pasted my work to and from there. 
-I tend to find it helpful for me.)
+I tend to find it helpful for me.) <br>
 My next blocker after that was my form value was not matching up with the API JSON file `birthday-string` value and I had a really
 hard time figuring out what was wrong. I had to ask a few friends and chatGPT. Using chatGPT was interesting because it still couldn't fix my problem. It was a great tool to make me realize what was wrong instead of telling me an answer that might or might not work. After console.logging in my code after asking it several questions, I finally came to the realization that my form value formatting was
 not matching up. I fixed that by adding the formatDate function in my result.js file. 
