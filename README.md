@@ -30,3 +30,22 @@ API Documentation: https://acnhapi.com/doc
 ![img1](images/General%20Assembly-2.jpg)
 ![img2](images/General%20Assembly-3.jpg)
 
+### Timeline 
+1st Commit: 
+- Started to do the basic outline for any project and set up all files
+- Set up options for the drop down menu
+
+2nd Commit:
+- Started on my javascript to test pulling values from the api
+
+3rd Commit:
+- added css styling to make things look like my wireframe
+- added a hidden form to my html so i can store my values to compare to the api
+- in my js i added more info to console.log the info i am going to be using
+- added a function to redirect to another result page instead of updating the same page
+- added my result.html and result.js files in with basic notes/frame
+
+4th Commit:
+
+
+
