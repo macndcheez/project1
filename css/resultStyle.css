@@ -18,18 +18,18 @@ body {
     max-width: 500px;
 }
   
-/* #villagerImg {
+#villagerImg {
     max-width: 200px;
     margin-bottom: 20px;
     height: auto;
     transition: opacity 0.3s ease-in-out;
-} */
+}
 
 /* add animation on hover */
-/* #villagerInfo:hover {
+#villagerInfo:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-out;
-} */
+}
 
 h1 {
     font-size: 70px;
