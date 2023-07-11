@@ -1,3 +1,10 @@
+// make music load 
+  window.addEventListener('load', () => {
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    backgroundMusic.play();
+    backgroundMusic.volume = 0.2;
+})
+
 document.addEventListener('DOMContentLoaded', () => {
     // grab from localStorage
     const selectedMonth = localStorage.getItem('selectedMonth');
@@ -34,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const gender = villager['gender'];
           const species = villager['species'];
           const saying = villager['saying'];
-          const imageUri = villager['image-uri'];
+          const imageUri = villager['image_uri'];
   
           document.getElementById('villagerName').textContent = name;
           document.getElementById('personality').textContent = personality;
@@ -42,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
           document.getElementById('gender').textContent = gender;
           document.getElementById('species').textContent = species;
           document.getElementById('saying').textContent = saying;
-          document.getElementById('villagerImg').textContent = imageUri;
+          document.getElementById('villagerImg').setAttribute('src', imageUri);
         } else {
           document.getElementById('villagerInfo').innerHTML = '<p>No matching villager found.</p>';
         }
@@ -59,3 +66,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const month = dateArray[0];
     return `"${month} ${day}"`;
   }
+  
+// mute button functions
+const backgroundMusic = document.getElementById('backgroundMusic');
+const muteBtn = document.getElementById('muteBtn');
+console.log(muteBtn);
+
+let isMuted = false;
+
+// function for making button textcontent change
+function toggleMute() {
+  if (isMuted) {
+    backgroundMusic.muted = false;
+    muteBtn.textContent = '🔆';
+  } else {
+    backgroundMusic.muted = true;
+    muteBtn.textContent = '🔇';
+  }
+  isMuted = !isMuted;
+}
+muteBtn.addEventListener('click', toggleMute);

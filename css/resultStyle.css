@@ -1,4 +1,47 @@
-villagerImg {
-    height: 300px;
-    width: 300px;
+body {
+    /* background-image: url(https://media.idownloadblog.com/wp-content/uploads/2020/04/Animal-Crossing-iPhone-wallpaper-Matt-MacPherson-iDownloadblog-1.png); */
+    background-image: url(https://media.idownloadblog.com/wp-content/uploads/2020/04/Animal-Crossing-iPhone-wallpaper-Matt-MacPherson-iDownloadblog-2.png);
+    text-align: center;
+    margin: 0;
+    padding: 250px 0 0;
+    font-family: "FinkHeavy";
+    font-size: 25px;
+}
+
+/* add style card  */
+#villagerInfo {
+    margin: 0 auto;
+    background-color: #edf7e7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+}
+  
+/* #villagerImg {
+    max-width: 200px;
+    margin-bottom: 20px;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+} */
+
+/* add animation on hover */
+/* #villagerInfo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-out;
+} */
+
+h1 {
+    font-size: 70px;
+    color: #2d4839;
+}
+
+h3 {
+    color: #3f463b
+}
+
+#muteBtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
 }

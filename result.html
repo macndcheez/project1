@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <title>Your birthday twin is..</title>
     <link rel="stylesheet" href="./css/resultStyle.css">
-    <script src="./js/result.js"></script>
+    <script defer src="./js/result.js"></script>
 </head>
 <body>
     <h1>It's <span id="villagerName"></span>!</h1>
@@ -16,7 +17,26 @@
         <h3>Birthday: <span id="birthday"></span></h3>
         <h3>Gender: <span id="gender"></span></h3>
         <h3>Species: <span id="species"></span></h3>
-        <h3>Saying: <span id="saying"></span></h3>
+        <h3>Quote: <span id="saying"></span></h3>
     </div>
+
+    <audio id="backgroundMusic" src="./audio/resultMusic.mp3" autoplay loop></audio>
+    <button id="muteBtn">🔆</button>
+
+    <script>
+        // animation effect for villagerImg
+    $(document).ready(function() {
+    $('#villagerInfo').fadeIn(1000, 'linear', function() {
+        console.log("fade in good")
+    });
+
+    setTimeout(function() {
+    $('#villagerInfo').fadeOut(1000, 'linear', function() {
+        console.log("fade out good")
+    });
+    }, 30000);
+  })
+    </script>
+
 </body>
 </html>

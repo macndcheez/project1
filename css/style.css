@@ -1,17 +1,46 @@
+@font-face {
+    font-family: "FinkHeavy";
+    src: url("../fonts/FinkHeavy.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    /* background-image: url(https://i.redd.it/y5mzeig307b41.png); */
+    background-image: url(https://images5.alphacoders.com/956/956578.jpg);
+    background-size: cover;
+}
+
 h1 {
    text-align: center;
+   font-family: "FinkHeavy";
    margin: 0;
-   padding: 300px 0 0;
-   color:	#81f1f7;
+   padding: 350px 0 0;
+   color:	#c48d3f;
+   font-size: 90px; 
 }
 
 .forms {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 50px;
     flex-direction: column;
     /* color:  */
+}
+
+input#button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+select {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 3px;
+}
+
+#muteBtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
 }
 
 .select {
@@ -23,16 +52,5 @@ h1 {
 
 #button {
    margin: 40px;
+   padding: 3px;
 }
-
-/* 
-#9dffb0
-#81f1f7
-#c48d3f
-#fff563
-*/
-
-/* 
-background img to be ac leaves
-opacity at 20% 
-*/
